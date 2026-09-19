@@ -1,0 +1,8 @@
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# scratch
+*.log
+!results/*.log

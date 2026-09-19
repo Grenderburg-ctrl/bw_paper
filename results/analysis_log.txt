@@ -1,0 +1,187 @@
+=== Session ===
+R:       R version 4.3.3 (2024-02-29)
+Bioc:    3.18
+DESeq2:  1.42.1
+
+=== Input ===
+file:    data/salmon.merged.gene_counts_blast2_with_ensembl_ids.csv
+rows:    33294
+columns: gene_id, ensembl_gene_id, Bw1, Bw2, Bw3, Bw4, R004, R005, R006, R007
+duplicate gene symbols: 0
+
+=== Gene exclusion (step 2) ===
+mitochondrial removed: 13  -> ATP6, ATP8, COX1, COX2, COX3, CYTB, ND1, ND2, ND3, ND4, ND4L, ND5, ND6
+Rn*/<8chr removed:     115
+  true rRNA/snRNA:     6  -> Rn18s, Rn28s, Rn45s, Rn5-8s, Rn5s, Rn7sl1
+  COLLATERAL (protein-coding caught by the rule): 109
+    Rnase1, Rnase10, Rnase11, Rnase12, Rnase13, Rnase17, Rnase2, Rnase3, Rnase4, Rnase6, Rnase9, Rnaseh1, Rnasek, Rnasel, Rnaset2, Rnd1, Rnd2, Rnd3, Rnf10, Rnf103, Rnf111, Rnf112, Rnf114, Rnf115, Rnf11l1, Rnf11l2, Rnf121, Rnf122, Rnf123, Rnf125, Rnf126, Rnf128, Rnf13, Rnf130, Rnf133, Rnf135, Rnf138, Rnf139, Rnf14, Rnf144a, Rnf144b, Rnf145, Rnf146, Rnf148, Rnf149, Rnf150, Rnf151, Rnf152, Rnf157, Rnf165, Rnf166, Rnf167, Rnf168, Rnf169, Rnf17, Rnf170, Rnf180, Rnf181, Rnf182, Rnf183, Rnf185, Rnf186, Rnf187, Rnf19a, Rnf19b, Rnf2, Rnf20, Rnf207, Rnf208, Rnf212, Rnf212b, Rnf213, Rnf214, Rnf215, Rnf216, Rnf217, Rnf220, Rnf222, Rnf223, Rnf224, Rnf225, Rnf227, Rnf24, Rnf25, Rnf26, Rnf31, Rnf32, Rnf34, Rnf38, Rnf39, Rnf4, Rnf40, Rnf41, Rnf43, Rnf44, Rnf5, Rnf6, Rnf7, Rnf8, Rnft1, Rnft2, Rngtt, Rnh1, Rnls, Rnmt, Rnpc3, Rnpep, Rnpepl1, Rnps1
+total removed:         128
+
+=== RUN 1: with mito/rRNA exclusion (primary protocol) ===
+[run1] genes before filter: 33166
+[run1] genes after rowSums>=10: 18003
+[run1] size factors:
+    Bw1  1.2775
+    Bw2  0.6278
+    Bw3  1.0976
+    Bw4  1.2638
+    R004  1.4025
+    R005  0.8264
+    R006  0.9747
+    R007  0.8327
+[run1] results() description:
+    mean of normalized counts for all samples
+    log2 fold change (MLE): condition blast vs control
+    standard error: condition blast vs control
+    Wald statistic: condition blast vs control
+    Wald test p-value: condition blast vs control
+    BH adjusted p-values
+[run1] DEG padj<0.05: 5353  (down 2548, up 2805)
+[run1] padj NA (independent filtering / outliers): 748
+
+=== RUN 2: WITHOUT mito/rRNA exclusion (sensitivity) ===
+[run2] genes before filter: 33294
+[run2] genes after rowSums>=10: 18114
+[run2] size factors:
+    Bw1  1.2775
+    Bw2  0.6281
+    Bw3  1.0979
+    Bw4  1.2637
+    R004  1.4016
+    R005  0.8264
+    R006  0.9752
+    R007  0.8331
+[run2] results() description:
+    mean of normalized counts for all samples
+    log2 fold change (MLE): condition blast vs control
+    standard error: condition blast vs control
+    Wald statistic: condition blast vs control
+    Wald test p-value: condition blast vs control
+    BH adjusted p-values
+[run2] DEG padj<0.05: 5390  (down 2563, up 2827)
+[run2] padj NA (independent filtering / outliers): 752
+
+=== RUN 3: mito + TRUE rRNA only (Rnf*/Rnase*/Rnd* spared) ===
+[run3] genes before filter: 33275
+[run3] genes after rowSums>=10: 18097
+[run3] size factors:
+    Bw1  1.2777
+    Bw2  0.6278
+    Bw3  1.0978
+    Bw4  1.2638
+    R004  1.4023
+    R005  0.8263
+    R006  0.9750
+    R007  0.8329
+[run3] results() description:
+    mean of normalized counts for all samples
+    log2 fold change (MLE): condition blast vs control
+    standard error: condition blast vs control
+    Wald statistic: condition blast vs control
+    Wald test p-value: condition blast vs control
+    BH adjusted p-values
+[run3] DEG padj<0.05: 5388  (down 2564, up 2824)
+[run3] padj NA (independent filtering / outliers): 751
+
+=== Panel comparison (run 1 vs reference) ===
+      gene ref_log2FC   R_log2FC      d_log2FC lfc_ok ref_padj       R_padj
+1     Tmc6     -1.618 -1.6189916 -9.915577e-04   TRUE  2.9e-20 1.599491e-15
+2   Mcoln2      5.544  5.5784639  3.446386e-02   TRUE  3.6e-08 1.689514e-06
+3    Kcnk2     -1.188 -1.1884209 -4.209294e-04   TRUE  9.3e-08 8.073897e-07
+4   Piezo2     -2.859 -2.8226659  3.633409e-02   TRUE  4.7e-07 4.699158e-05
+5     Ano8     -0.630 -0.6309439 -9.438831e-04   TRUE  6.6e-06 4.630223e-04
+6  Tmem63a     -1.134 -1.1343409 -3.408904e-04   TRUE  1.0e-05 7.941907e-05
+7     Pkd1     -1.234 -1.2336719  3.280611e-04   TRUE  3.4e-05 5.051261e-05
+8     Ano6     -1.098 -1.0979661  3.386034e-05   TRUE  4.8e-05 1.092352e-04
+9   Piezo1     -1.473 -1.4731212 -1.212307e-04   TRUE  7.7e-05 1.354226e-04
+10 Tmem63b     -0.580 -0.5794724  5.275796e-04   TRUE  1.0e-03 3.378196e-03
+11    Tmc7     -0.968 -0.9657645  2.235523e-03   TRUE  3.2e-03 1.002729e-02
+12   Trpm4     -0.502 -0.4968684  5.131562e-03   TRUE  4.0e-03 2.839939e-02
+13   Kcnk3      0.207  0.2074479  4.478521e-04   TRUE  5.3e-01 5.572453e-01
+14    Myh6     -0.962 -0.9615641  4.359027e-04   TRUE  4.8e-06 1.321879e-05
+15    Myh7      1.701  1.7010624  6.242084e-05   TRUE  6.3e-06 3.849530e-06
+16  Col3a1     -2.819 -2.8187478  2.521560e-04   TRUE  9.5e-07 1.945443e-11
+   ref_sig R_sig call_agrees
+1     TRUE  TRUE        TRUE
+2     TRUE  TRUE        TRUE
+3     TRUE  TRUE        TRUE
+4     TRUE  TRUE        TRUE
+5     TRUE  TRUE        TRUE
+6     TRUE  TRUE        TRUE
+7     TRUE  TRUE        TRUE
+8     TRUE  TRUE        TRUE
+9     TRUE  TRUE        TRUE
+10    TRUE  TRUE        TRUE
+11    TRUE  TRUE        TRUE
+12    TRUE  TRUE        TRUE
+13   FALSE FALSE        TRUE
+14    TRUE  TRUE        TRUE
+15    TRUE  TRUE        TRUE
+16    TRUE  TRUE        TRUE
+
+=== Panel: run2 (no mito/rRNA exclusion) vs run3 (mito + true rRNA only) ===
+      gene   R_log2FC       R_padj noexcl_log2FC  noexcl_padj noexcl_sig
+1     Tmc6 -1.6189916 1.599491e-15    -1.6190939 1.487242e-15       TRUE
+2   Mcoln2  5.5784639 1.689514e-06     5.5780163 1.663447e-06       TRUE
+3    Kcnk2 -1.1884209 8.073897e-07    -1.1886007 8.115960e-07       TRUE
+4   Piezo2 -2.8226659 4.699158e-05    -2.8228800 4.681694e-05       TRUE
+5     Ano8 -0.6309439 4.630223e-04    -0.6310401 4.491407e-04       TRUE
+6  Tmem63a -1.1343409 7.941907e-05    -1.1344673 7.919513e-05       TRUE
+7     Pkd1 -1.2336719 5.051261e-05    -1.2338787 5.121719e-05       TRUE
+8     Ano6 -1.0979661 1.092352e-04    -1.0981174 1.096450e-04       TRUE
+9   Piezo1 -1.4731212 1.354226e-04    -1.4733255 1.367999e-04       TRUE
+10 Tmem63b -0.5794724 3.378196e-03    -0.5795748 3.370396e-03       TRUE
+11    Tmc7 -0.9657645 1.002729e-02    -0.9658210 9.990442e-03       TRUE
+12   Trpm4 -0.4968684 2.839939e-02    -0.4970481 2.807955e-02       TRUE
+13   Kcnk3  0.2074479 5.572453e-01     0.2075098 5.570610e-01      FALSE
+14    Myh6 -0.9615641 1.321879e-05    -0.9616373 1.305570e-05       TRUE
+15    Myh7  1.7010624 3.849530e-06     1.7009197 3.885405e-06       TRUE
+16  Col3a1 -2.8187478 1.945443e-11    -2.8189580 2.000954e-11       TRUE
+   strict_log2FC  strict_padj strict_sig
+1     -1.6190091 1.530636e-15       TRUE
+2      5.5782571 1.674188e-06       TRUE
+3     -1.1884414 7.987457e-07       TRUE
+4     -2.8225897 4.702149e-05       TRUE
+5     -0.6309451 4.494656e-04       TRUE
+6     -1.1343799 7.903875e-05       TRUE
+7     -1.2337471 5.050405e-05       TRUE
+8     -1.0980235 1.089553e-04       TRUE
+9     -1.4732354 1.359216e-04       TRUE
+10    -0.5794636 3.341619e-03       TRUE
+11    -0.9656813 1.000942e-02       TRUE
+12    -0.4969037 2.816662e-02       TRUE
+13     0.2074998 5.570118e-01      FALSE
+14    -0.9615265 1.304086e-05       TRUE
+15     1.7010665 3.873370e-06       TRUE
+16    -2.8188748 1.983170e-11       TRUE
+
+max |log2FC| shift run1->run2: 0.0004
+max |log2FC| shift run1->run3: 0.0002
+significance calls changed run1->run2: 0
+significance calls changed run1->run3: 0
+
+=== Contrast direction check (raw counts) ===
+Mcoln2   raw blast=     37.8  raw control=      0.8 | norm blast=     33.3  norm control=      0.5 | log2FC=+5.578  -> higher in blast
+         per-sample raw: Bw1=49  Bw2=11  Bw3=44  Bw4=47  R004=3  R005=0  R006=0  R007=0
+Col3a1   raw blast=   3299.5  raw control=  21065.2 | norm blast=   2924.5  norm control=  20637.3 | log2FC=-2.819  -> higher in control
+         per-sample raw: Bw1=4281  Bw2=1247  Bw3=2433  Bw4=5237  R004=33538  R005=29910  R006=14590  R007=6223
+
+=== Size factors vs reference ===
+     sample   ref         R     pct_dev   ok
+Bw1     Bw1 1.277 1.2774627  0.03623260 TRUE
+Bw2     Bw2 0.628 0.6278371 -0.02594038 TRUE
+Bw3     Bw3 1.098 1.0975839 -0.03789950 TRUE
+Bw4     Bw4 1.264 1.2637782 -0.01754992 TRUE
+R004   R004 1.403 1.4024593 -0.03853827 TRUE
+R005   R005 0.826 0.8263920  0.04746265 TRUE
+R006   R006 0.975 0.9746820 -0.03261580 TRUE
+R007   R007 0.833 0.8327241 -0.03311922 TRUE
+
+=== Global counts vs reference ===
+genes after filter:  ref 18002  | R 18003  (dev +0.01%)
+DEG padj<0.05:       ref 6371   | R 5353  (dev -15.98%)
+  down:              ref 3131   | R 2548
+  up:                ref 3240   | R 2805
+run2 (no exclusion):        genes 18114, DEG 5390 (down 2563, up 2827)
+run3 (mito+true rRNA only): genes 18097, DEG 5388 (down 2564, up 2824)
+
