@@ -6,3 +6,6 @@
 # scratch
 *.log
 !results/*.log
+
+# renv / R
+Rplots.pdf

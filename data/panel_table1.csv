@@ -1,0 +1,114 @@
+gene,family,subfamily,class,module,source
+Scnn1a,ENaC/ASIC,ENaC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Scnn1b,ENaC/ASIC,ENaC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Scnn1g,ENaC/ASIC,ENaC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Scnn1d,ENaC/ASIC,ENaC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Asic1,ENaC/ASIC,ASIC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Asic2,ENaC/ASIC,ASIC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Asic3,ENaC/ASIC,ASIC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Asic4,ENaC/ASIC,ASIC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Asic5,ENaC/ASIC,ASIC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Piezo1,PIEZO,PIEZO,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Piezo2,PIEZO,PIEZO,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk1,K2P,TWIK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk6,K2P,TWIK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk7,K2P,TWIK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk2,K2P,TREK/TRAAK,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk10,K2P,TREK/TRAAK,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk4,K2P,TREK/TRAAK,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk3,K2P,TASK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk9,K2P,TASK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk5,K2P,TALK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk16,K2P,TALK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk17,K2P,TALK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk13,K2P,THIK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk12,K2P,THIK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnk18,K2P,TRESK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpc1,TRPC,TRPC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpc2,TRPC,TRPC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpc3,TRPC,TRPC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpc4,TRPC,TRPC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpc5,TRPC,TRPC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpc6,TRPC,TRPC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpc7,TRPC,TRPC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpv1,TRPV,TRPV,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpv2,TRPV,TRPV,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpv3,TRPV,TRPV,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpv4,TRPV,TRPV,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpv5,TRPV,TRPV,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpv6,TRPV,TRPV,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpm1,TRPM,TRPM,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpm2,TRPM,TRPM,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpm3,TRPM,TRPM,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpm4,TRPM,TRPM,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpm5,TRPM,TRPM,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpm6,TRPM,TRPM,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpm7,TRPM,TRPM,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpm8,TRPM,TRPM,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Trpa1,TRPA,TRPA,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Mcoln1,TRPML,TRPML,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Mcoln2,TRPML,TRPML,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Mcoln3,TRPML,TRPML,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Pkd2,TRPP,PKD2-like (TRPP),MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Pkd2l1,TRPP,PKD2-like (TRPP),MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Pkd2l2,TRPP,PKD2-like (TRPP),MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Pkd1,TRPP,PKD1-like,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Pkd1l1,TRPP,PKD1-like,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Pkd1l2,TRPP,PKD1-like,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Pkd1l3,TRPP,PKD1-like,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano1,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano2,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano3,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano4,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano5,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano6,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano7,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano8,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano9,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Ano10,TMEM16/ANO,TMEM16,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmem63a,TMEM63,TMEM63,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmem63b,TMEM63,TMEM63,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmem63c,TMEM63,TMEM63,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmc1,TMC,TMC,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmc2,TMC,TMC,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmc3,TMC,TMC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmc4,TMC,TMC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmc5,TMC,TMC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmc6,TMC,TMC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmc7,TMC,TMC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmc8,TMC,TMC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Tmem150c,TMEM150C,TMEM150C,MS,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Kcnma1,KCNMA1,BK,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Lrrc8a,LRRC8,VRAC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Lrrc8b,LRRC8,VRAC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Lrrc8c,LRRC8,VRAC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Lrrc8d,LRRC8,VRAC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Lrrc8e,LRRC8,VRAC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Clcn1,ClC,ClC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Clcn2,ClC,ClC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Clcn3,ClC,ClC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Clcn4,ClC,ClC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Clcn5,ClC,ClC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Clcn6,ClC,ClC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Clcn7,ClC,ClC,MR,channel,IUPHAR/BPS Guide to Pharmacology & HGNC gene groups; reconstructed for this repo (no prior panel file found)
+Cav1,Caveolae,Caveolae,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Cav2,Caveolae,Caveolae,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Cav3,Caveolae,Caveolae,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Cavin1,Caveolae,Caveolae,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Cavin2,Caveolae,Caveolae,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Cavin3,Caveolae,Caveolae,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Cavin4,Caveolae,Caveolae,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Flna,Tethers,Tethers,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Ddr1,Tethers,Tethers,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Ddr2,Tethers,Tethers,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Itgb1,Tethers,Tethers,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Itgb5,Tethers,Tethers,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Ilk,Tethers,Tethers,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Sgca,Tethers,Tethers,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Col4a1,Basement membrane,Basement membrane,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Col4a2,Basement membrane,Basement membrane,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Nid1,Basement membrane,Basement membrane,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Nid2,Basement membrane,Basement membrane,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Hspg2,Basement membrane,Basement membrane,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Lamb1,Basement membrane,Basement membrane,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
+Lama2,Basement membrane,Basement membrane,,scaffold,"Scaffold module as specified by author (figure spec, section 2)"
