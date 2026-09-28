@@ -36,7 +36,7 @@ pA <- ggplot() +
   labs(x = NULL, y = "<i>Myh7</i>/<i>Myh6</i> ratio", tag = "A") +
   theme_ijms
 
-# Mini-panel: DESeq2 log2FC ± lfcSE (rLLB vs. Sham).
+# Mini-panel: DESeq2 log2FC ± lfcSE (rLLB vs. control).
 myh <- res[c("Myh6", "Myh7"), c("gene_id", "baseMean", "log2FoldChange", "lfcSE", "padj", "direction")]
 myh$stars <- p_stars(myh$padj)
 myh$gene_id <- factor(myh$gene_id, levels = c("Myh7", "Myh6"))
@@ -99,7 +99,7 @@ pB <- dot_plot(subset(mk, block != "Matrix production"), "B", FALSE)
 pC <- dot_plot(subset(mk, block == "Matrix production"), "C", TRUE)
 
 ## ---------------------------------------------------------------- layout ---
-left  <- (pA | (plot_spacer() / pA2 + plot_layout(heights = c(1, 1.3)))) + plot_layout(widths = c(1.35, 1))
+left  <- (pA | (plot_spacer() / pA2 + plot_layout(heights = c(1, 1.3)))) + plot_layout(widths = c(2, 1))
 right <- (pB / pC) + plot_layout(heights = c(7, 5))
 fig1 <- wrap_plots(left, right, widths = c(1, 2))
 

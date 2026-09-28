@@ -18,7 +18,7 @@ panel_ch <- subset(d$panel, module == "channel")
 ## ---------------------------------------------------------------- panel A ---
 pca <- plotPCA(d$vsd, intgroup = "group", ntop = 500, returnData = TRUE)
 pv  <- attr(pca, "percentVar")
-pca$group <- factor(pca$group, levels = c("Sham", "rLLB"))
+pca$group <- factor(pca$group, levels = c("Control", "rLLB"))
 pca$sample <- rownames(pca)
 
 # Library composition per sample (raw rounded counts, all annotated genes).
@@ -47,8 +47,8 @@ pA <- ggplot(pca, aes(PC1, PC2)) +
   geom_text_repel(aes(label = sample), size = FONT_MM(6), family = "Arial",
                   segment.size = 0.18, segment.colour = "grey50", min.segment.length = 0.3,
                   box.padding = 0.25, point.padding = 0.15, seed = 1) +
-  scale_shape_manual(values = c(Sham = 21, rLLB = 24), name = NULL) +
-  scale_colour_manual(values = c(Sham = "black", rLLB = "black"), guide = "none") +
+  scale_shape_manual(values = c(Control =21, rLLB = 24), name = NULL) +
+  scale_colour_manual(values = c(Control ="black", rLLB = "black"), guide = "none") +
   scale_fill_manual(values = pca_col, name = NULL) +
   scale_x_continuous(limits = limx, labels = lab_minus()) +
   scale_y_continuous(limits = limy, labels = lab_minus()) +

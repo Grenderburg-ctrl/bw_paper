@@ -119,25 +119,25 @@ say("## 3. Myh7/Myh6 ratio (Fig. 1A)")
 say("")
 say(md_table(data.frame(group = rs$group, n = rs$n, mean = fmt(rs$mean), SD = fmt(rs$sd, 2), SEM = fmt(rs$sem, 2))))
 say("")
-say("The expected values (rLLB 0.47 ± 0.23, Sham 0.068 ± 0.027) are **mean ± SD**. The figure shows mean ± SEM.")
+say("The expected values (rLLB 0.47 ± 0.23, Control0.068 ± 0.027) are **mean ± SD**. The figure shows mean ± SEM.")
 say("Welch t-test on the linear ratio (as drawn): t = ", fmt(unname(f1$welch$statistic)), ", df = ",
     fmt(unname(f1$welch$parameter)), ", p = ", fmt(f1$welch$p.value), ". For reference, Welch on log10(ratio): p = ",
     fmt(welch_log$p.value), " (not used).")
 say("")
 m_r <- rs$mean[rs$group == "rLLB"]; s_r <- rs$sd[rs$group == "rLLB"]
-m_s <- rs$mean[rs$group == "Sham"]; s_s <- rs$sd[rs$group == "Sham"]
-say(md_table(data.frame(check = c("rLLB mean ± SD", "Sham mean ± SD", "Welch p"),
+m_s <- rs$mean[rs$group == "Control"]; s_s <- rs$sd[rs$group == "Control"]
+say(md_table(data.frame(check = c("rLLB mean ± SD", "Controlmean ± SD", "Welch p"),
   expected = c("0.47 ± 0.23", "0.068 ± 0.027", "≈ 0.036"),
   obtained = c(sprintf("%.2f ± %.2f", m_r, s_r), sprintf("%.3f ± %.3f", m_s, s_s), sprintf("%.3f", f1$welch$p.value)),
   status = c(chk("Myh7/Myh6 rLLB", "0.47 ± 0.23", sprintf("%.2f ± %.2f", m_r, s_r), round(m_r, 2) == 0.47 && round(s_r, 2) == 0.23),
-             chk("Myh7/Myh6 Sham", "0.068 ± 0.027", sprintf("%.3f ± %.3f", m_s, s_s), round(m_s, 3) == 0.068 && round(s_s, 3) == 0.027),
+             chk("Myh7/Myh6 Control", "0.068 ± 0.027", sprintf("%.3f ± %.3f", m_s, s_s), round(m_s, 3) == 0.068 && round(s_s, 3) == 0.027),
              chk("Welch p", "0.036", sprintf("%.3f", f1$welch$p.value), round(f1$welch$p.value, 3) == 0.036)))))
 say("")
 
 ## 4 ----------------------------------------------------------------------------
 f3 <- .bw$fig3
 pc1 <- f3$pca$PC1; grp <- f3$pca$group
-sep <- max(pc1[grp == "Sham"]) < min(pc1[grp == "rLLB"]) || min(pc1[grp == "Sham"]) > max(pc1[grp == "rLLB"])
+sep <- max(pc1[grp == "Control"]) < min(pc1[grp == "rLLB"]) || min(pc1[grp == "Control"]) > max(pc1[grp == "rLLB"])
 say("## 4. PCA (Fig. 3A)")
 say("")
 say("VST: `vst(dds, blind = TRUE)`; `plotPCA(ntop = 500)`. PC1 = ", sprintf("%.1f%%", 100 * f3$pv[1]),

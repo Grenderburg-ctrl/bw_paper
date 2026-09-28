@@ -31,7 +31,7 @@ dir.create(dir_fig, showWarnings = FALSE)
 dir.create(dir_src, showWarnings = FALSE)
 
 SAMPLES <- c("R004", "R005", "R006", "R007", "Bw1", "Bw2", "Bw3", "Bw4")
-GROUP   <- factor(ifelse(grepl("^R0", SAMPLES), "Sham", "rLLB"), levels = c("Sham", "rLLB"))
+GROUP   <- factor(ifelse(grepl("^R0", SAMPLES), "Control", "rLLB"), levels = c("Control", "rLLB"))
 names(GROUP) <- SAMPLES
 
 MITO_GENES <- c("ND1", "ND2", "ND3", "ND4", "ND4L", "ND5", "ND6",
@@ -106,7 +106,7 @@ md_sub <- function(x) sprintf("<sub><span style='font-size:%gpt'>%s</span></sub>
 md_sup <- function(x) sprintf("<sup><span style='font-size:%gpt'>%s</span></sup>", SCRIPT_PT, x)
 md_it  <- function(x) sprintf("<i>%s</i>", x)
 MD_PADJ   <- paste0(md_it("p"), md_sub("adj"))
-MD_LOG2FC <- paste0("log", md_sub("2"), " fold change (rLLB vs. Sham)")
+MD_LOG2FC <- paste0("log", md_sub("2"), " fold change (rLLB vs. control)")
 
 # p-value as a markdown label: "p = 0.036", "p = 1.8 × 10^−4" (Unicode minus/times).
 fmt_p_md <- function(p, lab = md_it("p"), digits = 2, sci_below = 1e-3) {
@@ -142,7 +142,7 @@ lab_minus <- function(...) {
 }
 
 ## ------------------------------------------------ bar + point summaries ---
-# Long table of normalized counts for a set of genes, Sham -> rLLB.
+# Long table of normalized counts for a set of genes, Control -> rLLB.
 long_counts <- function(genes, d = get_data()) {
   genes <- genes[genes %in% rownames(d$ncounts)]
   do.call(rbind, lapply(genes, function(g) data.frame(

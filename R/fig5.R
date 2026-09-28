@@ -94,7 +94,7 @@ pf <- build_panel("F", panels$F, NCOL)
 write_src(do.call(rbind, src_all), "Fig5")
 
 # Shared group key (drawn once, right of panel B).
-key <- ggplot(data.frame(group = factor(c("Sham", "rLLB"), c("Sham", "rLLB")), y = c(2, 1))) +
+key <- ggplot(data.frame(group = factor(c("Control", "rLLB"), c("Control", "rLLB")), y = c(2, 1))) +
   geom_tile(aes(x = 0, y = y, fill = group), width = 0.6, height = 0.55, colour = "black", linewidth = 0.18) +
   geom_text(aes(x = 0.5, y = y, label = group), hjust = 0, size = FONT_MM(7), family = "Arial") +
   scale_fill_manual(values = grp_fill, guide = "none") +

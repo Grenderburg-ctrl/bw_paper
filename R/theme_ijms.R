@@ -12,9 +12,9 @@ theme_ijms <- theme_classic(base_size = 7, base_family = "Arial") +
         legend.key.size = unit(3, "mm"),
         plot.tag = element_text(size = 10, face = "bold"))
 
-grp_fill  <- c(Sham = "#FFFFFF", rLLB = "#595959")   # bars: white with black outline / dark grey
-pt_fill   <- c(Sham = "#000000", rLLB = "#FFFFFF")   # animal points: black / white with black outline
-pca_col   <- c(Sham = "#A6A6A6", rLLB = "#000000")   # PCA: light-grey circle / black triangle
+grp_fill  <- c(Control ="#FFFFFF", rLLB = "#595959")   # bars: white with black outline / dark grey
+pt_fill   <- c(Control ="#000000", rLLB = "#FFFFFF")   # animal points: black / white with black outline
+pca_col   <- c(Control ="#A6A6A6", rLLB = "#000000")   # PCA: light-grey circle / black triangle
 dir_col   <- c(Down = "#2166AC", Up = "#B2182B", NS = "#BFBFBF")
 heat_cols <- c("#2166AC", "#F7F7F7", "#B2182B")      # z-score from -2 to 2, values clipped
 
