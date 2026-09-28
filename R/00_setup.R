@@ -110,7 +110,15 @@ d_lfc  <- max(abs(de$log2FC - ref$log2FoldChange[m]), na.rm = TRUE)
 na_pad_same <- identical(is.na(de$padj), is.na(ref$padj[m]))
 d_padj <- max(abs(de$padj - ref$padj[m]), na.rm = TRUE)
 qc_check("2.1", "Same gene set as reference", "TRUE", same_set, same_set)
-qc_check("2.1", "baseMean max |diff| vs reference", "< 1e-10", sprintf("%.2e", d_base), d_base < 1e-10)
+# baseMean: the prompt's absolute tolerance (1e-10) is below the storage precision of the reference CSV
+# (15 significant digits) for baseMean > ~1e5. Per the user's decision (2026-09-28) the check compares at the
+# stored precision; the absolute difference is still reported below.
+base_same_stored <- all(as.numeric(format(de$baseMean, digits = 15)) == ref$baseMean[m])
+d_base_rel <- max(abs(de$baseMean - ref$baseMean[m]) / de$baseMean)
+qc_check("2.1", "baseMean identical at stored precision (15 sig. digits)", "TRUE", base_same_stored, base_same_stored)
+qc_check("2.1", "baseMean max relative |diff| vs reference", "< 1e-12", sprintf("%.1e", d_base_rel), d_base_rel < 1e-12)
+qc_note("2.1", sprintf("baseMean max absolute |diff| = %.2e (prompt tolerance 1e-10 not met because of CSV storage precision; ", d_base),
+        "check replaced by the stored-precision comparison on the user's decision, 2026-09-28).")
 qc_check("2.1", "log2FC max |diff| vs reference", "< 1e-8", sprintf("%.2e", d_lfc), d_lfc < 1e-8)
 qc_check("2.1", "padj NA pattern identical", "TRUE", na_pad_same, na_pad_same)
 qc_check("2.1", "padj max |diff| vs reference", "< 1e-8", sprintf("%.2e", d_padj), d_padj < 1e-8)
@@ -143,12 +151,15 @@ colnames(tpm_c)[3:6] <- ctrl_ids                      # control_1..4 = R004..R00
 qc_note("2.3", "Mapping: control_1..control_4 -> R004..R007; Bw1..Bw4 named in file (column order = Bw1..Bw4).")
 
 for (x in list(list("Control", tpm_c), list("rLLB", tpm_b))) {
-  qc_check("2.3", paste0("TPM rows, ", x[[1]]), 33293, nrow(x[[2]]), nrow(x[[2]]) == 33293)
+  # Prompt expected 33 293; all three input files carry 33 294 genes (same set). 33 294 accepted by the user, 2026-09-28.
+  qc_check("2.3", paste0("TPM rows, ", x[[1]]), 33294, nrow(x[[2]]), nrow(x[[2]]) == 33294)
   qc_check("2.3", paste0("TPM gene_id unique, ", x[[1]]), "TRUE",
            !anyDuplicated(x[[2]]$gene_id), !anyDuplicated(x[[2]]$gene_id))
 }
 qc_check("2.3", "Same gene_id set in both TPM files", "TRUE",
          setequal(tpm_c$gene_id, tpm_b$gene_id), setequal(tpm_c$gene_id, tpm_b$gene_id))
+qc_note("2.3", "Prompt expected 33 293 genes per TPM file; the files (and the counts file) have 33 294. ",
+        "Expected value changed to 33 294 on the user's decision, 2026-09-28.")
 qc_note("2.3", "TPM gene_id set identical to the counts-file gene_id set (", length(symbols), " rows): ",
         setequal(tpm_c$gene_id, symbols), ".")
 

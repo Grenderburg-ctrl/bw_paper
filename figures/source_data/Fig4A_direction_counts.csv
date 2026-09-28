@@ -1,0 +1,3 @@
+"set","down","up","fisher_OR","fisher_p","OR_definition"
+"Genome",2543,2824,7.40097161114825,0.00017882831851941,"odds(down | panel) / odds(down | genome), two-sided fisher.test"
+"Panel",20,3,7.40097161114825,0.00017882831851941,"odds(down | panel) / odds(down | genome), two-sided fisher.test"

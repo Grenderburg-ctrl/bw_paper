@@ -1,0 +1,32 @@
+"family","gene","status","log2FC","padj"
+"ENaC/ASIC","Asic3","n.d.",NA,NA
+"TRPM","Trpm1","n.t.",-0.983877968321805,NA
+"TMC","Tmc5","n.d.",NA,NA
+"TRPP","Pkd2l1","n.d.",NA,NA
+"TREK/TRAAK","Kcnk10","n.t.",-0.309784524282932,NA
+"TRPM","Trpm3","n.t.",-0.24596738217195,NA
+"TRPC","Trpc2","n.d.",NA,NA
+"TMC","Tmc1","n.d.",NA,NA
+"TRPV","Trpv3","n.d.",NA,NA
+"TMEM16","Ano9","n.t.",1.9084702184928,NA
+"TRPP","Pkd1l2","n.d.",NA,NA
+"ENaC/ASIC","Asic5","n.d.",NA,NA
+"TMC","Tmc4","n.d.",NA,NA
+"remaining K2P","Kcnk15","n.d.",NA,NA
+"TRPP","Pkd1l3","n.d.",NA,NA
+"remaining K2P","Kcnk16","n.d.",NA,NA
+"TRPV","Trpv6","n.d.",NA,NA
+"Other","Trpa1","n.d.",NA,NA
+"TRPM","Trpm6","n.d.",NA,NA
+"TMEM16","Ano7","n.d.",NA,NA
+"TRPV","Trpv5","n.d.",NA,NA
+"ENaC/ASIC","Scnn1b","n.d.",NA,NA
+"ENaC/ASIC","Scnn1g","n.d.",NA,NA
+"remaining K2P","Kcnk12","n.d.",NA,NA
+"remaining K2P","Kcnk9","n.d.",NA,NA
+"remaining K2P","Kcnk18","n.d.",NA,NA
+"TRPC","Trpc7","n.d.",NA,NA
+"ENaC/ASIC","Scnn1d","n.d.",NA,NA
+"TMC","Tmc3","n.d.",NA,NA
+"TMC","Tmc2","n.d.",NA,NA
+"remaining K2P","Kcnk17","n.d.",NA,NA
