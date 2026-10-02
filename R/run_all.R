@@ -111,3 +111,6 @@ if (nzchar(Sys.which("tiffinfo"))) for (t in tiffs) {
 qc_note("Session", paste(c("```", capture.output(sessionInfo()), "```"), collapse = "\n"))
 write_qc_report()
 if (any(!qc_checks$ok)) message("Some checks failed: see figures/figure_qc.md") else message("All checks passed.")
+
+# FigVG / FigVG_ext (voltage-gated channel forest plot); own QC report: figures/figure_qc_VG.md.
+source("R/figVG_forest.R", encoding = "UTF-8")

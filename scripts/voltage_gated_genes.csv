@@ -1,0 +1,111 @@
+"class","family","role","tier","gene","protein","order"
+"Nav","Nav1","pore","core","Scn1a","Nav1.1",1
+"Nav","Nav1","pore","core","Scn2a","Nav1.2",2
+"Nav","Nav1","pore","core","Scn3a","Nav1.3",3
+"Nav","Nav1","pore","core","Scn4a","Nav1.4",4
+"Nav","Nav1","pore","core","Scn5a","Nav1.5",5
+"Nav","Nav1","pore","core","Scn8a","Nav1.6",6
+"Nav","Nav1","pore","core","Scn9a","Nav1.7",7
+"Nav","Nav1","pore","core","Scn10a","Nav1.8",8
+"Nav","Nav1","pore","core","Scn11a","Nav1.9",9
+"Nav","Nax","pore","core","Scn7a","Nax",10
+"Nav","Navβ","auxiliary","auxiliary","Scn1b","Navβ1",11
+"Nav","Navβ","auxiliary","auxiliary","Scn2b","Navβ2",12
+"Nav","Navβ","auxiliary","auxiliary","Scn3b","Navβ3",13
+"Nav","Navβ","auxiliary","auxiliary","Scn4b","Navβ4",14
+"Cav","Cav1 (L-type)","pore","core","Cacna1s","Cav1.1",15
+"Cav","Cav1 (L-type)","pore","core","Cacna1c","Cav1.2",16
+"Cav","Cav1 (L-type)","pore","core","Cacna1d","Cav1.3",17
+"Cav","Cav1 (L-type)","pore","core","Cacna1f","Cav1.4",18
+"Cav","Cav2 (P/Q, N, R)","pore","core","Cacna1a","Cav2.1",19
+"Cav","Cav2 (P/Q, N, R)","pore","core","Cacna1b","Cav2.2",20
+"Cav","Cav2 (P/Q, N, R)","pore","core","Cacna1e","Cav2.3",21
+"Cav","Cav3 (T-type)","pore","core","Cacna1g","Cav3.1",22
+"Cav","Cav3 (T-type)","pore","core","Cacna1h","Cav3.2",23
+"Cav","Cav3 (T-type)","pore","core","Cacna1i","Cav3.3",24
+"Cav","Cavβ","auxiliary","auxiliary","Cacnb1","Cavβ1",25
+"Cav","Cavβ","auxiliary","auxiliary","Cacnb2","Cavβ2",26
+"Cav","Cavβ","auxiliary","auxiliary","Cacnb3","Cavβ3",27
+"Cav","Cavβ","auxiliary","auxiliary","Cacnb4","Cavβ4",28
+"Cav","α2δ","auxiliary","auxiliary","Cacna2d1","α2δ-1",29
+"Cav","α2δ","auxiliary","auxiliary","Cacna2d2","α2δ-2",30
+"Cav","α2δ","auxiliary","auxiliary","Cacna2d3","α2δ-3",31
+"Cav","α2δ","auxiliary","auxiliary","Cacna2d4","α2δ-4",32
+"Cav","γ","auxiliary","auxiliary","Cacng1","γ1",33
+"Cav","γ","auxiliary","auxiliary","Cacng2","γ2",34
+"Cav","γ","auxiliary","auxiliary","Cacng3","γ3",35
+"Cav","γ","auxiliary","auxiliary","Cacng4","γ4",36
+"Cav","γ","auxiliary","auxiliary","Cacng5","γ5",37
+"Cav","γ","auxiliary","auxiliary","Cacng6","γ6",38
+"Cav","γ","auxiliary","auxiliary","Cacng7","γ7",39
+"Cav","γ","auxiliary","auxiliary","Cacng8","γ8",40
+"Kv","Kv1","pore","core","Kcna1","Kv1.1",41
+"Kv","Kv1","pore","core","Kcna2","Kv1.2",42
+"Kv","Kv1","pore","core","Kcna3","Kv1.3",43
+"Kv","Kv1","pore","core","Kcna4","Kv1.4",44
+"Kv","Kv1","pore","core","Kcna5","Kv1.5",45
+"Kv","Kv1","pore","core","Kcna6","Kv1.6",46
+"Kv","Kv1","pore","core","Kcna7","Kv1.7",47
+"Kv","Kv1","pore","core","Kcna10","Kv1.8",48
+"Kv","Kv2","pore","core","Kcnb1","Kv2.1",49
+"Kv","Kv2","pore","core","Kcnb2","Kv2.2",50
+"Kv","Kv3","pore","core","Kcnc1","Kv3.1",51
+"Kv","Kv3","pore","core","Kcnc2","Kv3.2",52
+"Kv","Kv3","pore","core","Kcnc3","Kv3.3",53
+"Kv","Kv3","pore","core","Kcnc4","Kv3.4",54
+"Kv","Kv4","pore","core","Kcnd1","Kv4.1",55
+"Kv","Kv4","pore","core","Kcnd2","Kv4.2",56
+"Kv","Kv4","pore","core","Kcnd3","Kv4.3",57
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcnf1","Kv5.1",58
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcng1","Kv6.1",59
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcng2","Kv6.2",60
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcng3","Kv6.3",61
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcng4","Kv6.4",62
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcnv1","Kv8.1",63
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcnv2","Kv8.2",64
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcns1","Kv9.1",65
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcns2","Kv9.2",66
+"Kv","KvS (Kv5/6/8/9)","pore (modifier)","core","Kcns3","Kv9.3",67
+"Kv","Kv7 (KCNQ)","pore","core","Kcnq1","Kv7.1",68
+"Kv","Kv7 (KCNQ)","pore","core","Kcnq2","Kv7.2",69
+"Kv","Kv7 (KCNQ)","pore","core","Kcnq3","Kv7.3",70
+"Kv","Kv7 (KCNQ)","pore","core","Kcnq4","Kv7.4",71
+"Kv","Kv7 (KCNQ)","pore","core","Kcnq5","Kv7.5",72
+"Kv","Kv10 (EAG)","pore","core","Kcnh1","Kv10.1",73
+"Kv","Kv10 (EAG)","pore","core","Kcnh5","Kv10.2",74
+"Kv","Kv11 (ERG)","pore","core","Kcnh2","Kv11.1",75
+"Kv","Kv11 (ERG)","pore","core","Kcnh6","Kv11.2",76
+"Kv","Kv11 (ERG)","pore","core","Kcnh7","Kv11.3",77
+"Kv","Kv12 (ELK)","pore","core","Kcnh8","Kv12.1",78
+"Kv","Kv12 (ELK)","pore","core","Kcnh3","Kv12.2",79
+"Kv","Kv12 (ELK)","pore","core","Kcnh4","Kv12.3",80
+"Kv","Kvβ","auxiliary","auxiliary","Kcnab1","Kvβ1",81
+"Kv","Kvβ","auxiliary","auxiliary","Kcnab2","Kvβ2",82
+"Kv","Kvβ","auxiliary","auxiliary","Kcnab3","Kvβ3",83
+"Kv","KCNE","auxiliary","auxiliary","Kcne1","MinK",84
+"Kv","KCNE","auxiliary","auxiliary","Kcne2","MiRP1",85
+"Kv","KCNE","auxiliary","auxiliary","Kcne3","MiRP2",86
+"Kv","KCNE","auxiliary","auxiliary","Kcne4","MiRP3",87
+"Kv","KCNE","auxiliary","auxiliary","Kcne5","KCNE1L",88
+"Kv","KChIP","auxiliary","auxiliary","Kcnip1","KChIP1",89
+"Kv","KChIP","auxiliary","auxiliary","Kcnip2","KChIP2",90
+"Kv","KChIP","auxiliary","auxiliary","Kcnip3","KChIP3",91
+"Kv","KChIP","auxiliary","auxiliary","Kcnip4","KChIP4",92
+"Kv","DPPX/DPPY","auxiliary","auxiliary","Dpp6","DPPX",93
+"Kv","DPPX/DPPY","auxiliary","auxiliary","Dpp10","DPPY",94
+"Related","HCN","pore","extended","Hcn1","HCN1",95
+"Related","HCN","pore","extended","Hcn2","HCN2",96
+"Related","HCN","pore","extended","Hcn3","HCN3",97
+"Related","HCN","pore","extended","Hcn4","HCN4",98
+"Related","BK","pore","extended","Kcnma1","KCa1.1",99
+"Related","Slo-like","pore","extended","Kcnt1","KNa1.1",100
+"Related","Slo-like","pore","extended","Kcnt2","KNa1.2",101
+"Related","Slo-like","pore","extended","Kcnu1","KCa5.1",102
+"Related","CatSper","pore","extended","Catsper1","CatSper1",103
+"Related","CatSper","pore","extended","Catsper2","CatSper2",104
+"Related","CatSper","pore","extended","Catsper3","CatSper3",105
+"Related","CatSper","pore","extended","Catsper4","CatSper4",106
+"Related","TPC","pore","extended","Tpcn1","TPC1",107
+"Related","TPC","pore","extended","Tpcn2","TPC2",108
+"Related","Hv1","pore","extended","Hvcn1","Hv1",109
+"Related","NALCN","pore","extended","Nalcn","NALCN",110
