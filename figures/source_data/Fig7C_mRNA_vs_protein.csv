@@ -1,0 +1,5 @@
+"gene","protein","assay","estimate","error","error_type","p_or_padj","direction"
+"Piezo1","PIEZO1","mRNA (RNA-seq, DESeq2)",-1.4733255148782,0.333849210184162,"lfcSE",0.000136799867775746,"down"
+"Trpm4","TRPM4","mRNA (RNA-seq, DESeq2)",-0.497048147311374,0.185859637098735,"lfcSE",0.0280795509652399,"down"
+"Piezo1","PIEZO1","Protein (Western blot)",-0.851030150782981,0.265174828009593,"SE (Welch, log2 densities)",0.01283661159009,"down"
+"Trpm4","TRPM4","Protein (Western blot)",0.0930177083480251,0.479186838283118,"SE (Welch, log2 densities)",0.887128290634954,"ns"
