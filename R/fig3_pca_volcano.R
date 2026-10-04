@@ -29,7 +29,8 @@ cor_tab <- do.call(rbind, lapply(c("size_factor", "mito_frac", "rRNA_frac", "Rn_
 }))
 tech_out <- tech[match(samples_order, tech$sample), ]
 
-pca$lab <- pca$sample
+# Display labels: Control animals R004–R007 are shown as Ctr1–Ctr4 (sample IDs stay in the source data).
+pca$lab <- ifelse(pca$sample %in% ctrl_ids, paste0("Ctr", match(pca$sample, ctrl_ids)), pca$sample)
 pA <- ggplot(pca, aes(PC1, PC2)) +
   geom_point(aes(shape = group, colour = group, fill = group), size = 2.2, stroke = 0.3) +
   geom_text_repel(aes(label = lab), size = 6.5 / PT, family = FONT, min.segment.length = 0.3,
