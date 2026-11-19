@@ -163,7 +163,7 @@ bar_panel <- function(p, title) {
     scale_fill_manual(values = c(Control = pal$ctrl_fill, rLLB = pal$bw_fill), guide = "none") +
     scale_y_continuous(limits = c(0, ymax), breaks = seq(0, 2, 0.5), labels = function(x) format(x, nsmall = 1),
                        expand = expansion(mult = c(0, 0))) +
-    labs(x = NULL, y = "Band density (a.u.,\nControl mean = 1)", title = title, subtitle = "n = 4 + 4") +
+    labs(x = NULL, y = paste0("Relative ", p, " band density\n(Control mean = 1)"), title = title, subtitle = "n = 4 + 4") +
     coord_cartesian(clip = "off") +
     theme_ijms() +
     theme(plot.subtitle = element_text(size = 6.5, hjust = 0), plot.title = element_text(size = 8, face = "bold"))
