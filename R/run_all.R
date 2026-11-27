@@ -10,7 +10,7 @@ write_qc_report <- function() {
   if (!is.null(qc_notes[["STOP"]])) md <- c(md, "## STOPPED", "", paste0("**", qc_notes[["STOP"]], "**"), "")
   sec_title <- c(`2.1` = "1. Counts and DESeq2 (section 2.1)", `2.3` = "TPM files (section 2.3)",
                  `2.4` = "Panel (section 2.4)", `2.5` = "Modules outside the panel (section 2.5)",
-                 Fig1 = "Fig. 1", Fig2 = "Fig. 2", Fig3 = "Fig. 3", Fig4 = "Fig. 4", Fig5 = "Fig. 5", Fig6 = "Fig. 6", Fig7 = "Fig. 7",
+                 Fig1 = "Fig. 1", Fig2 = "Fig. 2", Fig3 = "Fig. 3", Fig4 = "Fig. 4", Fig5 = "Fig. 5", Fig6 = "Fig. 6", Fig7 = "Fig. 7", Fig7tp = "Fig. 7, total protein",
                  Cooks = "Cook's distance", Fonts = "Fonts", Session = "sessionInfo()")
   md <- c(md, "## Checks: expected / obtained / OK", "",
           "| section | check | expected | obtained | OK |", "|---|---|---|---|---|",
@@ -34,7 +34,8 @@ qc_check("Fonts", "systemfonts::match_font('Arial')", "arial.ttf", basename(fm$p
 qc_stop_if_failed("Fonts")
 
 for (f in c("R/fig1_purity.R", "R/fig2_channelome_tpm.R", "R/fig3_pca_volcano.R",
-            "R/fig4_selectivity.R", "R/fig5_forest.R", "R/fig6_scaffold_heatmap.R", "R/fig7_western.R")) {
+            "R/fig4_selectivity.R", "R/fig5_forest.R", "R/fig6_scaffold_heatmap.R", "R/fig7_western.R",
+            "R/fig7_western_totalprotein.R")) {
   message("=== ", f, " ===")
   source(f, encoding = "UTF-8")
 }
